@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: hsl(185, 41%, 84%);
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Space Mono', monospace;
+}
+
+.name{
+  text-align: center;
+  color:hsl(183, 100%, 15%);
+  padding: 100px 0;
+}
+.container{
+  background-color: white;
+  height: 75vh;
+ border-radius: 20px 20px 0px 0px;
+ padding: 30px 20px; 
+}
+label{
+  color: hsl(186, 14%, 43%);
+  font-size: 14px;
+   position: absolute;
+   top: -20px;
+}
+.input-box{
+  width: 90%;
+  margin: 0 auto;
+  height: 30px;
+  background-color: hsl(189, 41%, 97%);
+  position: relative;
+  margin-top: 10px;
+}
+input{
+  background: none;
+  outline: none;
+  border: 0;
+  width: 100%;
+  height: 30px;
+}
+.icon {
+ position: absolute;
+ top: 7px;
+ left: 10px;
+
+}
+
+ .tip-percent{
+  width: 95%;
+  margin: 20px auto;
+
+ }
+ .tip-percent p{
+ color: hsl(186, 14%, 43%);
+ padding-bottom: 10px;
+ width: 95%;
+ margin: 0 auto;
+ }
+ 
+ .tip-percent .boxes-for-percent{
+  display: grid;
+  margin: 0 auto;
+  width: 70%;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
+ }
+ .tip-percent .boxes-for-percent .boxes{
+  color: white;
+  width: 150px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 5px;
+  background-color: hsl(183, 100%, 15%);
+ }
+ .tip-percent .boxes-for-percent .boxes:last-child{
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+ }
+ .tip-percent .boxes-for-percent .boxes:hover{
+  background-color:  hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+ }
+ .mini-container{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+ .mini-container div{
+  display: flex;
+  justify-content: space-between;
+ }
+ .mini-container button{
+  height: 50px;
+  background-color: hsl(172, 67%, 45%);
+  border: none;
+  border-radius: 10px;
+ }
+
+@media screen and (min-width:800px) {
+.tip-percent .boxes-for-percent ,   .tip-percent p{
+width: 50%;
+}
+}
+@media screen  and (min-width:1000px) {
+.container{
+height: fit-content;
+width: fit-content;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+gap: 50px;
+}
+.tip-percent .boxes-for-percent ,   .tip-percent p{
+width: 0%;
+margin: 0;
+}
+.tip-percent .boxes-for-percent{
+grid-template-columns: 1fr 1fr 1fr;
+margin-bottom: 50px;
+}
+.tip-percent p{
+width: 100px;
+}
+.mini-container{
+width: 400px;
+margin-top: 50px;
+}
+}
