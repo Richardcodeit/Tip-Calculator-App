@@ -32,7 +32,6 @@ label{
 }
 .input-box{
   width: 90%;
-  margin: 0 auto;
   height: 30px;
   background-color: hsl(189, 41%, 97%);
   position: relative;
@@ -66,8 +65,7 @@ input{
  
  .tip-percent .boxes-for-percent{
   display: grid;
-  margin: 0 auto;
-  width: 70%;
+  width: 100%;
   gap: 10px;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 50px;
@@ -110,7 +108,13 @@ input{
   border: none;
   border-radius: 10px;
  }
-
+@media screen and (min-width:500px) {
+  .tip-percent .boxes-for-percent{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
 @media screen and (min-width:800px) {
 .tip-percent .boxes-for-percent ,   .tip-percent p{
 width: 50%;
