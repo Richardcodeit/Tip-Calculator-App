@@ -43,6 +43,7 @@ input{
   border: 0;
   width: 100%;
   height: 30px;
+  text-align: right;
 }
 .icon {
  position: absolute;
