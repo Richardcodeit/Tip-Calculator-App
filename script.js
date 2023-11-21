@@ -1,7 +1,8 @@
 const bill = document.querySelector("input"),
 Tipamount = document.getElementById("tip-amount"),
 Total = document.getElementById("total"),
-reset = document.getElementById("reset")
+reset = document.getElementById("reset"),
+erro = document.querySelector(".error")
 
 const numberOfpeople = document.getElementById("no-people")
 numberOfpeople.addEventListener("input", getNoPeople)
@@ -44,10 +45,13 @@ function updateUI(tip , total){
 
 function getNoPeople(tip){
     if(bill.value === "" && numberOfpeople.click){
-        console.log("press bill first")
+        erro.style.display = "block"
+        setTimeout(()=>{
+        erro.style.display = "none"
+        },3000)
         numberOfTotal = "$0.00"
         numberOfpeople.value = null
-        updateUI(tip,numberOfTotal)
+        updateUI(tipAmount,numberOfTotal)
     }
     else if(bill.value !== null && numberOfpeople.click){
     numberOf = Number(numberOfpeople.value) * tipAmount

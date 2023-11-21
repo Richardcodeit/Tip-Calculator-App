@@ -36,7 +36,15 @@ label{
   background-color: hsl(189, 41%, 97%);
   position: relative;
   margin-top: 10px;
+  margin-bottom: 50px;
 }
+.error{
+  font-size: 12px;
+  color: red;
+  display: none;
+  transition: display .5s ease-in-out;
+}
+
 input{
   background: none;
   outline: none;
