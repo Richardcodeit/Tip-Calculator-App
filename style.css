@@ -9,7 +9,6 @@
 body{
   background-color: hsl(185, 41%, 84%);
   width: 100%;
-  overflow: hidden;
   font-family: 'Space Mono', monospace;
 }
 
